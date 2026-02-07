@@ -8,18 +8,18 @@ export async function GET() {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: '210069@kindai-toyooka.ed.jp', // あなたのメールアドレス
-      subject: '【自動配信】朝の単語テスト ☀️',
+      subject: '【学習】自作単語アプリでテストしよう！📱',
       html: `
-        <h1>おはようございます！</h1>
-        <p>朝7時です。今日の単語テストの時間です！</p>
-        <hr />
-        <p><strong>Q1. Apple</strong></p>
-        <p>答え: リンゴ</p>
+        <h1>お疲れ様です！</h1>
+        <p>自作した単語帳アプリで学習を始めましょう。</p>
+        <p>以下のボタンからアプリを開けます👇</p>
         <br />
-        <p><strong>Q2. School</strong></p>
-        <p>答え: 学校</p>
-        <hr />
-        <p>今日も一日頑張りましょう！💪</p>
+        <a href="https://v0.app/chat/-e6PVPb8Wlxs" style="background-color: #0070f3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
+          🚀 アプリを開く
+        </a>
+        <br />
+        <br />
+        <p>継続は力なり！</p>
       `,
     });
 
